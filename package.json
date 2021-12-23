@@ -1,0 +1,14 @@
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.js",
+    "build": "vite --config vite.config.js  build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.45.1",
+    "vite": "^2.7.2"
+  }
+}

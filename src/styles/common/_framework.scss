@@ -1,0 +1,60 @@
+.container {
+    /* On centre */
+    margin: 0 auto;
+
+    /* On limite la largeur pour les grands écrans */
+    max-width: 1280px;
+
+    /* On gère la présence d'une marge */
+    width: 90%;
+}
+
+/*
+* Comme la dite marge est exprimée en pourcentage,
+* on l'augmente sur les devices moins larges.
+*/
+@media only screen and (min-width: 993px){
+    .container {
+        width: 85%;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    &>a{
+        display: block;
+    }
+}
+
+.card{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
+                0 1px 10px 0 rgba(0,0,0,0.12),
+                0 2px 4px -1px rgba(0,0,0,0.3),
+                0 2px 4px 1px rgba(0,0,0,0.3);
+}
+
+
+.btn{
+    @extend .card;
+    padding: 5px 10px 5px 10px;
+    margin:5px;
+    display: inline-flex;
+    background-color: #fff;
+
+    align-items: center;
+    justify-content: center;
+    
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+    a{
+        height: 100%;
+    }
+    img{
+      
+        height: 50px;
+        width: auto;
+    }
+}
